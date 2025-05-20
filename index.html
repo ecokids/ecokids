@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoKids - Las Tres R</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #e0fff2;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #3ddc97;
+      padding: 20px;
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    h2 {
+      color: #00a8cc;
+      margin-top: 10px;
+    }
+    .botones {
+      margin: 20px 0;
+    }
+    .botones button {
+      background-color: #00e676;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: background 0.3s;
+    }
+    .botones button:hover {
+      background-color: #00c853;
+    }
+    .imagenes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px;
+    }
+    .imagenes div {
+      margin: 10px;
+      width: 200px;
+    }
+    .imagenes img {
+      width: 100%;
+      border-radius: 15px;
+    }
+    #definicion {
+      margin: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+    .bienvenida {
+      margin: 30px;
+      font-size: 20px;
+      color: #444;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .tutorial {
+      background-color: #f0f8ff;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 15px;
+      max-width: 900px;
+    }
+    .paso {
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+    }
+    .paso img {
+      width: 150px;
+      margin-right: 20px;
+      border-radius: 10px;
+    }
+    .paso p {
+      text-align: left;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>ECOKIDS</header>
+  <h2>LAS TRES R - Sobre el PET</h2>
+
+  <div class="botones">
+    <button onclick="mostrarDefinicion('recicla')">RECICLA</button>
+    <button onclick="mostrarDefinicion('reduce')">REDUCE</button>
+    <button onclick="mostrarDefinicion('reutiliza')">REUTILIZA</button>
+  </div>
+
+  <div id="definicion"></div>
+
+  <div class="imagenes">
+    <div>
+      <img src="recicla.jpg" alt="Imagen Recicla">
+      <p>Recicla</p>
+    </div>
+    <div>
+      <img src="reduce.jpg" alt="Imagen Reduce">
+      <p>Reduce</p>
+    </div>
+    <div>
+      <img src="reutiliza.jpg" alt="Imagen Reutiliza">
+      <p>Reutiliza</p>
+    </div>
+  </div>
+
+  <div class="bienvenida">
+    <p>Hola mundo, somos Vania y Sofía del Bachilleres 4. Esta es nuestra página para crear conciencia sobre el uso del PET, de manera fácil, divertida y útil para los niños. Aquí aprenderás cómo darle una segunda vida al plástico creando juegos y manualidades ecológicas. ¡Reutilizar también puede ser creativo y educativo!</p>
+  </div>
+
+  <div class="tutorial">
+    <h2>Reutiliza: Juego de Té con Botellas de PET</h2>
+
+    <div class="paso">
+      <img src="reutiliza1.jpg" alt="Reutiliza 1">
+      <p><strong>Paso 1:</strong> Reúne materiales como botellas de PET, tijeras, silicón caliente, foamy de colores, listones y decoración.</p>
+    </div>
+
+    <div class="paso">
+      <img src="reutiliza2.jpg" alt="Reutiliza 2">
+      <p><strong>Paso 2:</strong> Corta la botella grande para hacer la tetera. Usa la parte inferior para la base y un pedazo del cuello para el pico.</p>
+    </div>
+
+    <div class="paso">
+      <img src="reutiliza3.jpg" alt="Reutiliza 3">
+      <p><strong>Paso 3:</strong> Corta círculos de foamy para decorar la base. Pega un listón alrededor y añade detalles con cuentas o perlas.</p>
+    </div>
+
+    <div class="paso">
+      <img src="reutiliza4.jpg" alt="Reutiliza 4">
+      <p><strong>Paso 4:</strong> Usa otra botella más pequeña para hacer las tacitas. Recorta la parte de abajo y agrega asas con tiras de plástico o foamy.</p>
+    </div>
+
+    <div class="paso">
+      <img src="reutiliza5.jpg" alt="Reutiliza 5">
+      <p><strong>Paso 5:</strong> Decora todas las piezas del juego con colores brillantes, listones y formas. Puedes usar silicón caliente para asegurar mejor.</p>
+    </div>
+
+    <div class="paso">
+      <img src="reutiliza6.jpg" alt="Reutiliza 6">
+      <p><strong>Paso 6:</strong> ¡Listo! Ahora tienes un hermoso juego de té hecho con materiales reciclados. Ideal para jugar y cuidar el planeta.</p>
+    </div>
+  </div>
+
+  <script>
+    function mostrarDefinicion(tipo) {
+      let definicion = '';
+      if (tipo === 'recicla') {
+        definicion = 'Reciclar es transformar los residuos para volver a usarlos como materia prima.';
+      } else if (tipo === 'reduce') {
+        definicion = 'Reducir significa consumir menos recursos y generar menos basura.';
+      } else if (tipo === 'reutiliza') {
+        definicion = 'Reutilizar es volver a usar los objetos para alargar su vida útil.';
+      }
+      document.getElementById('definicion').innerText = definicion;
+    }
+  </script>
+
+</body>
+</html>
